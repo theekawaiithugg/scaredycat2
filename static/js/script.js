@@ -114,3 +114,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#loginForm1').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        fetch('/logingin1', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('Error:', error));
+    });
+});
