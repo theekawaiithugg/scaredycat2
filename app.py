@@ -36,7 +36,7 @@ def logingin2():
             #TEMPORARY ENDING UNTILLNEXT UPDATE
             return redirect(url_for('protected'))
         else:
-            return render_template('Login3.html')
+            return render_template('login3.html')
     return render_template('login2.html')
 
 @app.route('/logingin3', methods=['GET', 'POST'])
@@ -83,21 +83,21 @@ def index():
     return render_template("index.html")
 
 #LOGIN PAGES FOR THE DIFFERENT LOGIN SCREENS
-@app.route('/Login1')
-def Login1():
+@app.route('/login1')
+def login1():
     #whatever we return from this function will be displayed on the browser now we will send the HTML template to the client browser
-    return render_template("Login1.html")
+    return render_template("login1.html")
 
 
-@app.route('/Login2')
-def Login2():
+@app.route('/login2')
+def login2():
     #whatever we return from this function will be displayed on the browser now we will send the HTML template to the client browser
-    return render_template("Login2.html")
+    return render_template("login2.html")
 
-@app.route('/Login3')
-def Login3():
+@app.route('/login3')
+def login3():
     #whatever we return from this function will be displayed on the browser now we will send the HTML template to the client browser
-    return render_template("Login3.html")
+    return render_template("login3.html")
 
 #HINTS THAT SHOULD LOOP BACK TO THEIR OWN LOGIN PAGES
 @app.route('/hint1')
