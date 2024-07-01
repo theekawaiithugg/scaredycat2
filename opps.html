@@ -1,0 +1,49 @@
+<!-- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587 -->
+
+<!DOCTYPE html>
+<html>
+    <!-- Head Section -->
+    <head>
+        <title>Hello video game!</title>
+        
+        <!-- Link to the CSS file for custom styles -->
+        <meta charset="UTF-8">
+        
+        <!-- Set the viewport to the device width and scale for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link to the custom CSS file using Flask's url_for -->
+        <link rel="stylesheet" href={{url_for('static', filename ='css/styles.css')}}>
+        
+        <!-- Link to Google Fonts for custom font style -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body Section -->
+    <body>
+        <!-- Background image with alt text and ID for styling -->
+        <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+        
+        <!-- Homepage image with alt text and ID for styling -->
+        <img src="{{ url_for('static', filename='img/homepage.jpg') }}" alt="Scary Face" id="computer">
+        
+        <!-- Link with an image that acts as a power button -->
+        <a href="{{ url_for('off') }}">
+            <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="indexpowerbutton">
+        </a>
+        
+        <!-- Container for overlay text and buttons -->
+        <div class="container">
+            <div class="text-overlay">
+                <!-- Text with a welcome message and login prompt -->
+                <p class="retro-text">
+                    Hello.<br> <br>
+                    Please log in.
+                </p>
+                
+                <!-- This is the login button -->
+                <a href="{{ url_for('Login1') }}" class="retro-text button">Enter</a>
+            </div>   
+        </div>
+    </body>
+</html>

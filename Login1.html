@@ -1,0 +1,56 @@
+<!-- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587 -->
+
+<!DOCTYPE html>
+<html>
+    <!-- Head Section -->
+    <head>
+        <title>Hello video game we need a password!</title>
+        
+        <!-- Link to the CSS file for custom styles -->
+        <meta charset="UTF-8">
+        
+        <!-- Set the viewport to the device width and scale for responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link to the custom CSS file using direct paths -->
+        <link rel="stylesheet" href="static/css/styles.css">
+        
+        <!-- Link to Google Fonts for custom font style -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body Section -->
+    <body>
+        <!-- Background image with alt text and ID for styling -->
+        <img src="static/img/finabackground.jpg" alt="Scary Face" id="backing">
+        
+        <!-- Homepage image with alt text and ID for styling -->
+        <img src="static/img/homepage.jpg" alt="Scary Face" id="computer">
+        
+        <!-- Link with an image that acts as a power button -->
+        <a href="off.html">
+            <img src="static/img/powerbttn.jpg" alt="Power Button" id="indexpowerbutton">
+        </a>
+        
+        <!-- Container for overlay text and buttons -->
+        <div class="container">
+            <div class="text-overlay">
+                <!-- Form for user login -->
+                <form method="POST" action="logingin1.html">
+                    <!-- Username label and input field -->
+                    <label class="retro-text" for="username">Username:</label>
+                    <input class="retro-text" type="text" id="username" name="username" required>
+                    <br>
+                    <!-- Password label and input field -->
+                    <label class="retro-text" for="password">Password:</label>
+                    <input class="retro-text" type="password" id="password" name="password" required>
+                    <br>
+                    <!-- Login button -->
+                    <button class="retro-text button" type="submit">Login</button>
+                </form>
+                <!-- Hint button -->
+                <button onclick="location.href='hint1.html'" class="retro-text button">Hint</button>
+            </div>
+        </div>
+    </body>
+</html>

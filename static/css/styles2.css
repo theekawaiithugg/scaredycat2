@@ -1,0 +1,123 @@
+/* Base styling for the entire page */
+/* Base styling for login2, login3 */
+html, body 
+    {
+    min-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    }
+
+
+body 
+    {
+        /*background-image: url('../img/homepage.jpg');*/
+        background-size: 100%; /* Adjusts the image to cover the entire background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        position: fixed;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Container for images */
+.container {
+    position: relative;
+}
+#backing {
+    position: absolute; /* Centers the image */
+    display: block;
+    transform: translate(2%, 7%); /* Center the image */
+    width: 3100px; /* Adjust the size as needed */
+}
+#computer {
+    position: absolute;
+    top: 50%; /* Adjust these values to lock the image to a specific position */
+    left: 50%; /* Adjust these values to lock the image to a specific position */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 770px; /* Adjust the size as needed */
+    
+    display: block;
+}
+    
+#powerbutton{
+    position: absolute;
+    transform: translate(405%, 280%); /* Center the image */
+    width: 76px; /* Adjust the size as needed */
+    display: block;
+}
+
+#powerbuttonl2{
+    position: absolute;
+    transform: translate(900%, 100%); /* Center the image */
+    width: 76px; /* Adjust the size as needed */
+    display: block;
+}
+
+/* Text overlay styling */
+.text-overlay {
+    position: absolute;
+
+    transform: translate(-50%, -30%);
+    color: #00FF00; /* Text color */
+    text-align: center;
+    z-index: 10; /* Ensure the text is on top */
+    width:770px; /* Adjust the size as needed */
+
+}
+
+/* Retro text style */
+.retro-text {
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00; /* Bright green text color */
+    font-size: 12px; /* Adjust the font size */
+    align-items: center ;
+    padding: -2px; /* Add some padding for better appearance */
+
+
+    text-shadow: 0 0 5px #183f18, /* Green glow */
+                 0 0 10px #00FF00, 
+                 0 0 15px #00FF00, 
+                 0 0 20px #00FF00, 
+                 0 0 25px #00FF00;
+    font-size: 12px;
+    margin: 10px;
+}
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100px; /* Set the width of the input fields */
+    padding: 5px; /* Add some padding for better appearance */
+    margin: 10px 0; /* Add some margin to separate the fields */
+    font-size: 12px; /* Adjust the font size */
+    border: 2px solid #040a04; /* Add a border that matches the retro style */
+    background-color: black; /* Background color */
+    color: #00FF00; /* Text color */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00;
+    background-color: black;
+    border: 2px solid #00FF00;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333; /* Darken background on hover */
+}
+/* Additional styles for better positioning and look */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+

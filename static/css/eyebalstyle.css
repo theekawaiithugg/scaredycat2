@@ -1,0 +1,256 @@
+/* Base styling for the entire page */
+/* Base styling for eyeballs, on,off, protected, grba */
+
+html, body {
+    min-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/finalbackground.jpg');
+    background-size: 100%; /* Adjusts the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Container for images */
+.container {
+    position: relative;
+}
+#backing {
+    position: absolute; /* Centers the image */
+    display: block;
+    transform: translate(2%, 7%); /* Center the image */
+    width: 3100px; /* Adjust the size as needed */
+}
+#scawy{
+    position: absolute; /* Centers the image */
+    display: block;
+    opacity: 80%;
+    transform: translate(2%, 7%); /* Center the image */
+    width: 3100px; /* Adjust the size as needed */
+}
+
+#computer {
+    position: absolute;
+    top: 50%; /* Adjust these values to lock the image to a specific position */
+    left: 50%; /* Adjust these values to lock the image to a specific position */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 770px; /* Adjust the size as needed */
+    
+    display: block;
+}
+
+
+#scaryface {
+    position: absolute;
+    top: 50%; /* Adjust these values to lock the image to a specific position */
+    left: 50%; /* Adjust these values to lock the image to a specific position */
+    opacity: 80%;
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 588px; /* Adjust the size as needed */
+    
+    display: block;
+}
+
+#powerbutton{
+    position: absolute;
+    transform: translate(900%, 265%); /* Center the image */
+    width: 76px; /* Adjust the size as needed */
+    display: block;
+}
+
+#powerbuttoneye{
+    position: absolute;
+    transform: translate(405%, 276%); /* Center the image */
+    width: 76px; /* Adjust the size as needed */
+    display: block;
+}
+
+#powerbuttongrab{
+    position: absolute;
+    transform: translate(405%, 276%); /* Center the image */
+    width: 76px; /* Adjust the size as needed */
+    display: block;
+}
+
+#computerreflection{
+    position: absolute;
+    transform: translate(0%, 0%); /* Center the image */
+    width: 600px; /* Adjust the size as needed */
+    opacity: 10%;
+    display: block;
+
+}
+
+#eyeball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    pointer-events: none;
+}
+/* Text overlay styling */
+.text-overlay {
+    position: absolute;
+    top: 20%; /* Adjust the position as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00FF00; /* Text color */
+    text-align: center;
+    z-index: 10; /* Ensure the text is on top */
+    width:770px; /* Adjust the size as needed */
+
+}
+
+/* Retro text style */
+.retro-text {
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00; /* Bright green text color */
+    font-size: 12px; /* Adjust the font size */
+    align-items: center;
+    padding: -2px; /* Add some padding for better appearance */
+    text-shadow: 0 0 10px #183f18, /* Green glow */
+                 0 0 10px #00FF00, 
+                 0 0 15px #00FF00, 
+                 0 0 20px #00FF00, 
+                 0 0 25px #00FF00;
+    margin: 10px;
+}
+
+/* Retro text style */
+.retrotext2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00; /* Bright green text color */
+    font-size: 15px; /* Adjust the font size */
+    align-items: center;
+    padding: -2px; /* Add some padding for better appearance */
+    text-shadow: 0 0 10px #183f18, /* Green glow */
+                 0 0 10px #041704, 
+                 0 0 15px #00FF00, 
+                 0 0 20px #00FF00, 
+                 0 0 25px #00FF00;
+    margin: 10px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100px; /* Set the width of the input fields */
+    padding: 5px; /* Add some padding for better appearance */
+    margin: 10px 0; /* Add some margin to separate the fields */
+    font-size: 12px; /* Adjust the font size */
+    border: 2px solid #040a04; /* Add a border that matches the retro style */
+    background-color: black; /* Background color */
+    color: #00FF00; /* Text color */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00;
+    background-color: black;
+    border: 2px solid #00FF00;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333; /* Darken background on hover */
+}
+
+/* Additional styles for better positioning and look */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.hover-spotbed {
+    margin: 20px;
+    padding: 10px 20px;
+    transform: translate(100%, -80%);
+
+    background-color: rgba(173, 216, 230, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 100px; /* Set the width of the input fields */
+
+}
+.hover-spotwindow {
+    margin: 20px;
+    padding: 10px 20px;
+    transform: translate(250%, -520%);
+
+    background-color: rgba(173, 216, 230, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 100px; /* Set the width of the input fields */
+
+}
+.hover-spothuman {
+    margin: 20px;
+    padding: 10px 20px;
+    transform: translate(200%, 70%);
+
+    background-color: rgba(173, 216, 230, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 100px; /* Set the width of the input fields */
+
+}
+.hover-spotglow1 {
+    margin: 20px;
+    padding: 10px 20px;
+    transform: translate(300%, 160%);
+
+    background-color: rgba(173, 216, 230, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 100px; /* Set the width of the input fields */
+
+}
+.hover-spotglow2 {
+    margin: 20px;
+    padding: 10px 20px;
+    transform: translate(130%, -500%);
+
+    background-color: rgba(173, 216, 230, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    width: 100px; /* Set the width of the input fields */
+
+}
+/*this is just for now*/
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: none;
+    z-index: 5;
+}
